@@ -1,0 +1,15 @@
+service: aws-practice-epam-bucket
+frameworkVersion: "3"
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: eu-north-1
+
+plugins:
+  - serverless-finch
+
+custom:
+  client:
+    bucketName: aws-practice-epam-bucket
+    distributionFolder: dist/app/browser
